@@ -1,0 +1,10 @@
+---
+services:
+  stream-stats:
+    build: .
+    container_name: stream-stats
+    restart: unless-stopped
+    ports:
+      - "9300:8000"
+    environment:
+      TZ: "Asia/Tokyo"
