@@ -6,5 +6,7 @@ services:
     restart: unless-stopped
     ports:
       - "9300:8000"
+    volumes:
+      - .env:/app/github-readme-streak-stats/.env:ro
     environment:
       TZ: "Asia/Tokyo"
